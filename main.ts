@@ -111,7 +111,7 @@ function getOrderStatus(status: OrderStatus) {
       return "Замовлення скасовано";
 
     default:
-      return "Невідомий статус замовлення";
+      throw new Error ("Невідомий статус замовлення");
   }
 }
 
